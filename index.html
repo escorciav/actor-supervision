@@ -1,1 +1,42 @@
-<p>Hello world</p>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <h2>Qualitative Results</h2>
+        <p>These are some of the detections of our algorithm on consumer videos.</p>
+        <h3>Actor proposals on non-human actors</h3>
+        <p>Our approach is able to generate non-human actors proposals on the A2D dataset. On the left and center, qualitative visualizations of action proposals are shownfor two non-human actors,Bird and Ball. Recalls at IoU=0.5 for all 8 actor classes are shown on the right side. The recalls are consistently high for all the classes except for Ball, which is understandable due to its common shape and small size, which invite many occlusions</p>
+        <div class="thumbnail">
+          <a href="figure5.png" target="_blank">
+            <img src="figure5.png" alt="a2d" style="width:100%">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <h3>Spatiotemporal action localization</h3>
+      <p>We also evaluate our approach for the task of action localization in the challenging THUMOS13 dataset. The top row shows three successful cases by visualizing the ground-truth and action tubes as well as two highlighted frames. These include action sequences that have deformations of actor as well as multiple actors with complex background. The bottom row visualizes three failed cases which show that crowded background, occlusions and temporally untrimmed action sequences are the most challenging scenarios.</p>
+      <div class="thumbnail">
+        <a href="figure6.png" target="_blank">
+          <img src="figure6.png" alt="thumos13" style="width:100%">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</body>
+</html>
